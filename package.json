@@ -41,9 +41,9 @@
     "optimize"
   ],
   "dependencies": {
+    "@nhatdo-osc/jpeg-recompress-bin": "git+https://github.com/OpenSourceCommerce/jpeg-recompress-bin.git#develop",
     "exec-buffer": "^3.0.0",
-    "is-jpg": "^2.0.0",
-    "jpeg-recompress-bin": "^5.1"
+    "is-jpg": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^3.8.0",
