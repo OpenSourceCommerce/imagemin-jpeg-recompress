@@ -1,6 +1,7 @@
 'use strict';
 const execBuffer = require('exec-buffer');
 const isJpg = require('is-jpg');
+const isPng = require('is-png');
 const jpegRecompress = require('jpeg-recompress-bin');
 
 module.exports = options => buf => {
@@ -10,7 +11,7 @@ module.exports = options => buf => {
 		return Promise.reject(new TypeError('Expected a buffer'));
 	}
 
-	if (!isJpg(buf)) {
+	if (!isJpg(buf) && !isPng(buf)) {
 		return Promise.resolve(buf);
 	}
 
